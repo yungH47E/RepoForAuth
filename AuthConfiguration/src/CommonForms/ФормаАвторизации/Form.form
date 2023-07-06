@@ -405,6 +405,14 @@
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
+  </handlers>
   <width>70</width>
   <height>20</height>
   <windowOpeningMode>LockWholeInterface</windowOpeningMode>
@@ -462,6 +470,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Вход</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
@@ -474,6 +487,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Отмена</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
@@ -486,6 +504,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПоказатьСкрытьПароль</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
